@@ -1,0 +1,89 @@
+<%- include('header') -%>
+
+<style>
+    body {
+        background-color: #161615; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: #bb4ea1; 
+    }
+
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .card {
+        margin-top: 50px;
+        background-color: #111111;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(37, 35, 35, 0.1);
+        overflow: hidden;
+        transition: transform 0.1s ease-in-out; 
+    }
+
+    .card:hover {
+        transform: scale(1.05); 
+    }
+
+    .card-body {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 2rem;
+        color: #96150c; 
+        margin-bottom: 20px;
+        transition: color 0.3s ease-in-out; 
+    }
+
+    .card:hover .card-title {
+        color: #a44a4a; 
+    }
+
+    .card-text {
+        color: #a4acc4; 
+        line-height: 1.6;
+    }
+
+    .btn-logout {
+        margin-top: 20px;
+        background: #000000; 
+        border: none;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        transition: background 0.3s ease-in-out, transform 0.3s ease-in-out; 
+        margin-left: 270px;
+    }
+
+    .btn-logout:hover {
+        background: #21d073; 
+        transform: scale(1.05); 
+    }
+</style>
+
+<div class="container">
+    
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">Welcome...!</h2>
+        </div>
+    </div>
+
+    <!-- Logout Buttons -->
+    <a href="/logout" class="btn btn-logout">Logout</a>
+    
+</div>
+
+<%- include('footer') -%>
